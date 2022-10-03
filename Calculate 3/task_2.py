@@ -2,14 +2,16 @@ import sys
 
 maximum = - sys.maxsize
 
-for i in range(2):
+for i in range(3):
     try:
         input_value = input('Write value ->')
         maximum = max(int(input_value), maximum)
     except ValueError:
         print('Not a number, can\'t calculate max from 3 numbers')
+        break
 
 print('Maximum input value is', maximum)
+
 
 # in case you want to make the program endless here is the cose sample that will work until input is not numeric value:
 # import sys
