@@ -1,15 +1,13 @@
 import sys
 
 maximum = - sys.maxsize
-input_value = input('Write value ->')
 
 for i in range(2):
     try:
-        maximum = max(int(input_value), maximum)
         input_value = input('Write value ->')
+        maximum = max(int(input_value), maximum)
     except ValueError:
         print('Not a number, can\'t calculate max from 3 numbers')
-
 
 print('Maximum input value is', maximum)
 
@@ -17,13 +15,12 @@ print('Maximum input value is', maximum)
 # import sys
 #
 # maximum = - sys.maxsize
-# input_value = input('Write value ->')
 # is_number = True
 #
 # while is_number:
 #     try:
-#         maximum = max(int(input_value), maximum)
 #         input_value = input('Write value ->')
+#         maximum = max(int(input_value), maximum)
 #     except ValueError:
 #         is_number = False
 #
